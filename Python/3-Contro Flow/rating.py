@@ -1,4 +1,8 @@
-rating = 3
+
+rating =float(input("Enter your rating: "))
+
+if rating > 5:
+    print("mindblowing")
 if rating > 4.5:
   print('Extraordinary')
 elif rating > 4:
