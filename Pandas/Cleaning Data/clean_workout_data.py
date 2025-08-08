@@ -20,6 +20,6 @@ df.drop_duplicates(inplace=True) # Remove duplicate rows
 # 4. Cleanning wrong data
 for x in df.index:
     if df.loc[x, 'Duration'] > 60:
-        df.loc[x, 'Duration'] = 160
+        df.loc[x, 'Duration'] = 60  # Set 'Duration' to 60 if it is greater than 60
 
 print(df)  
